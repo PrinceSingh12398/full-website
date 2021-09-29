@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width intial-scale=1.0">
+<title>full website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+     <div>
+     <ul class="opt">
+        <li class="opt1">Home</li>
+        <li class="opt1">Services</li>
+        <li class="opt1">Price</li>
+        <li class="opt1">About</li>
+        <li class="opt1">Contact</li>
+      </ul>
+      </div>
+      <div>
+          <h1 id="welcome" class="intro intro1"></h1>
+        <h1 class="intro intro2">We are the Web Developers</h1>
+        <br>
+        <h3 class="intro">We create the world best websites.</h3>
+        <button class="btn1 intro">AboutUs</button>
+        <button class="btn1 intro btn2">Contact</button>
+       </div>
+    </header>
+
+       <span class="description">
+           <h3>EASY TO USE</h3><br>
+           <p class="para1">You can learn this in a week.</p>
+         </span>
+         <span class="description">
+           <h3>AWESOME DESIGN</h3><br>
+           <p class="para1">You will get a lot of design to use.</p>
+         </span>
+         <span class="description">
+          <h3>EASY TO CUSTOMIZE</h3><br>
+           <p class="para1">You can change it by using simple tricks.</p>
+      </span>
+        
+      <div class="offer">
+          <div class="offerHead">
+              <h3>WHAT DO WE OFFER</h3>
+              <p>Lorem ipsum madolor sit amet, cinsecteur adipisiching elit.</p>
+          </div>
+          <span>
+          <ul>
+              <li class="offerCourse" >HTML</li>
+              <li class="offerCourse">CSS</li>
+              <li class="offerCourse">JAVASCRIPT</li>
+              <li class="offerCourse">REACTJS</li>
+              <li class="offerCourse">NODEJS</li>
+          </ul>
+          </span>
+          <span class="offerDetails">
+            <h4>Website Development</h4>      
+            <p>Lorem ipsum madolor sit amet, cinsecteur adipisiching elit.<br>sod do eiusmod tempor cali incididunt</p>
+            <h4>Digital Marketing</h4>      
+            <p>Lorem ipsum madolor sit amet, cinsecteur adipisiching elit.<br>sod do eiusmod tempor cali incididunt</p>
+          <h4>Support 24/7</h4>      
+            <p>Lorem ipsum madolor sit amet, cinsecteur adipisiching elit.<br>sod do eiusmod tempor cali incididunt</p>
+          </span>
+     </div> 
+    
+    <div>
+         <h2 class="number">MORE THAN 2,000 WEBSITE CREATED</h2>
+         <div>
+        <ul>
+            <li class="number1"><h3>1,500</h3>CMS installation</li> 
+            <li class="number1"><h3>26</h3>Awards won</li>   
+            <li class="number1"><h3>25,000</h3>Happy clients</li>
+             <li class="number1"><h3>155</h3>Working on</li> 
+        </ul>
+        </div>
+    </div>
+    
+    <div class="price">
+               <h2>OUR BEST PRICE</h2>
+          <span class="priceType">
+                <h3>BASIC</h3><hr>
+              <p>2,200/website <br> Responsive websites<br>  Domain name free<br>  Mobile friendly<br>  Webmail support<br>  Customer support 24/7</p><hr> <br>
+              <button class="priceButton">PURCHASE</button>
+         </span>
+         <span class="priceType">
+                <h3>STANDARD</h3><hr>
+                <p>2,200/website <br> Responsive websites<br>  Domain name free<br>  Mobile friendly<br>  Webmail support<br>  Customer support 24/7</p><hr><br>
+                <button class="priceButton">PURCHASE</button>
+         </span>
+         <span class="priceType">
+                <h3>ADVANCED</h3><hr>
+                <p>2,200/website <br> Responsive websites<br>  Domain name free<br>  Mobile friendly<br>  Webmail support<br>  Customer support 24/7</p><hr><br>
+                <button class="priceButton">PURCHASE</button>
+         </span>
+     </div>
+    
+    <div>
+         <h3 class="sbscrb">SUBSCRIBE TO OUR NEWSLATTER</h3>
+         <br>
+         <input type="email" placeholder="your email" class="subscribe">
+        <button class="subscribeBtn" onclick="alert('Thanks for subscribe us.')">Subscribe</button>
+    </div>
+    
+    <footer class="foot">
+         <span class="footInfo">
+             <h3>ABOUT</h3>
+             <p>The world has become so fast paced that people don't want to stan by reading a page of information to be they would much rather look at a presentation and understand the message.</p>
+        </span>
+        <span class="footInfo">
+              <h3>NAVIGATION LINKS</h3>
+              <p>Home</p><p>Services</p><p>Price</p><p>About</p>
+        </span>
+        <span class="footInfo">
+              <h3>NEWSLETTER</h3>
+              <p>For buisness professionals caught between high OEM price and mediacare prinnt and graphic output.</p>
+        </span>
+        <p class="last">This template is made by <span class="lastName">VIKHYAT SINGH</span></p>    
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+   
+</body>
+</html>
+<script>
+var name=prompt("what's your name","");
+document.getElementById("welcome").innerHTML="WELCOME "+name+" !!!";
+    
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
